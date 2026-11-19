@@ -11,6 +11,7 @@ Updated 2026-11-19. Public release: v0.2.0.
 - `scripts/download_models.py`, `models.json`: checksum-pinned release asset installation.
 - `install.sh`, `run.sh`, `requirements.txt`: portable runtime installation and command entry point.
 - `references/workflow.md`: commands, scene configuration, failure handling and resource use.
+- `references/setup-and-validation.md`: detailed installation, checks and v0.2.0 release notes moved out of the README.
 - `examples/`: selected full-width original/AI-edit display pair, provenance in `selected-pair.json`, and earlier source-pixel previews/checks in `manifest.json`.
 - `tests/test_pipeline.py`: synthetic preservation and error-handling tests.
 - `LICENSE`, `NOTICE`, `third_party/`: code license and model attribution.
@@ -44,3 +45,5 @@ The README displays one user-selected pair vertically, original above and edited
 - 2026-11-19: Packaged the established photo workflow for public installation; improved lighting controls using glare and projected-stripe failure cases. Eight automated checks and clean-install/real-photo inference checks passed on macOS Python 3.11.
 
 - 2026-11-19: Replaced the README comparison layout with the exact user-selected original and AI-edit pair, displayed separately at full content width. Retained native pixels, documented provenance and preserved earlier processing checks.
+
+- 2026-11-19: Simplified the README using unslop copy/design guidance. Moved one-command installation into a green GitHub alert at the top, retained the selected full-width image pair, and moved detailed setup/checks into a linked guide.
