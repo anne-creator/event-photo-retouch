@@ -1,0 +1,32 @@
+{
+  "release": "v0.2.0",
+  "files": [
+    {
+      "name": "model.onnx",
+      "sha256": "d5b2a94201849f24ab4c38f2c56d52b1df6a2e6dd178f0f94e25f21997e5a16a",
+      "bytes": 102544002,
+      "url": "https://github.com/anne-creator/event-photo-retouch/releases/download/v0.2.0/model.onnx",
+      "license": "Apache-2.0",
+      "upstream_model": "iic/cv_unet_skin_retouching_torch",
+      "upstream_revision": "30f890aab89b787aae93c3f396dbf32714bd950e"
+    },
+    {
+      "name": "retouch_generator.onnx",
+      "sha256": "84eecf2a3b46e58c02820c7ae5d90aa45c95435d7342636451e7da17004d4a4e",
+      "bytes": 53567920,
+      "url": "https://github.com/anne-creator/event-photo-retouch/releases/download/v0.2.0/retouch_generator.onnx",
+      "license": "Apache-2.0",
+      "upstream_model": "iic/cv_unet_skin_retouching_torch",
+      "upstream_revision": "30f890aab89b787aae93c3f396dbf32714bd950e"
+    },
+    {
+      "name": "face_detector.onnx",
+      "sha256": "faba27be6e51408954bba7a3444facc4381103adfcc2f9b16d5d425f6dfcdc4d",
+      "bytes": 109118983,
+      "url": "https://github.com/anne-creator/event-photo-retouch/releases/download/v0.2.0/face_detector.onnx",
+      "license": "MIT",
+      "upstream_model": "iic/cv_resnet50_face-detection_retinaface",
+      "upstream_revision": "a3f0e4db2f39fdc1486fca660282f9a18a9753f9"
+    }
+  ]
+}

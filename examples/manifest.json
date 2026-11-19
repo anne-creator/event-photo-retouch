@@ -1,0 +1,84 @@
+{
+  "version": "v0.2.0",
+  "note": "Same-scale JPEG web previews. Original-size processing and PNG preservation checks precede preview export. Photos are excluded from the software license.",
+  "examples": [
+    {
+      "id": "ceiling",
+      "caption": "Ceiling glare and halo control",
+      "source_size": [
+        3840,
+        2160
+      ],
+      "preview_long_side": 1280,
+      "lighting_version": "0.2.0",
+      "finish_strength": 0.3,
+      "before": {
+        "file": "examples/ceiling-before.jpg",
+        "size": [
+          1280,
+          720
+        ],
+        "sha256": "cfc4116c3264e77194904c8532fb86e8e7c5ad367d959aacb30727c096c54b1a"
+      },
+      "after": {
+        "file": "examples/ceiling-after.jpg",
+        "size": [
+          1280,
+          720
+        ],
+        "sha256": "cab2b9643e1f1ea09a39ba2e2e0f5fe2d736fcea4c6feb9797f06935a2d0cb18"
+      },
+      "checks": {
+        "retouched_faces": 4,
+        "outside_skin_mask_exact": true,
+        "protected_features_exact": true,
+        "source_hash_unchanged": true,
+        "max_channel_change": 7
+      },
+      "model_weight_sha256": {
+        "model.onnx": "d5b2a94201849f24ab4c38f2c56d52b1df6a2e6dd178f0f94e25f21997e5a16a",
+        "retouch_generator.onnx": "84eecf2a3b46e58c02820c7ae5d90aa45c95435d7342636451e7da17004d4a4e",
+        "face_detector.onnx": "faba27be6e51408954bba7a3444facc4381103adfcc2f9b16d5d425f6dfcdc4d"
+      }
+    },
+    {
+      "id": "selfie",
+      "caption": "Mixed warm light and natural multi-face finish",
+      "source_size": [
+        1707,
+        1280
+      ],
+      "preview_long_side": 1280,
+      "lighting_version": "0.2.0",
+      "finish_strength": 0.3,
+      "before": {
+        "file": "examples/selfie-before.jpg",
+        "size": [
+          1280,
+          960
+        ],
+        "sha256": "4fa83167b718e26054acb5b2bfa49f03a4bb50b543cfca3ea1ef29da8c7107db"
+      },
+      "after": {
+        "file": "examples/selfie-after.jpg",
+        "size": [
+          1280,
+          960
+        ],
+        "sha256": "31a98c54cb98af0861ed29ab59721761d7a8fa53f8672cc265ce2c982a7c7500"
+      },
+      "checks": {
+        "retouched_faces": 3,
+        "outside_skin_mask_exact": true,
+        "protected_features_exact": true,
+        "source_hash_unchanged": true,
+        "max_channel_change": 7
+      },
+      "model_weight_sha256": {
+        "model.onnx": "d5b2a94201849f24ab4c38f2c56d52b1df6a2e6dd178f0f94e25f21997e5a16a",
+        "retouch_generator.onnx": "84eecf2a3b46e58c02820c7ae5d90aa45c95435d7342636451e7da17004d4a4e",
+        "face_detector.onnx": "faba27be6e51408954bba7a3444facc4381103adfcc2f9b16d5d425f6dfcdc4d"
+      }
+    }
+  ]
+}

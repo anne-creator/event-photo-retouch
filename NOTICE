@@ -1,0 +1,36 @@
+Event Photo Retouch 0.2.0
+
+The skill instructions, lighting field implementation, masks, installation
+scripts and independent inference backend are distributed under LICENSE.
+No third-party skin-retouching adapter source is included.
+
+Separately downloaded model assets:
+
+1. model.onnx and retouch_generator.onnx
+   ModelScope iic/cv_unet_skin_retouching_torch
+   https://modelscope.cn/models/iic/cv_unet_skin_retouching_torch
+   Upstream revision: 30f890aab89b787aae93c3f396dbf32714bd950e
+   License declared by the upstream model card: Apache License 2.0.
+   Copyright remains with the upstream authors and contributors.
+   The retouch network was exported to ONNX for CPU inference. The skin-mask
+   ONNX asset is carried with the same model family attribution.
+   See third_party/APACHE-2.0.txt.
+
+2. face_detector.onnx
+   ModelScope iic/cv_resnet50_face-detection_retinaface
+   https://modelscope.cn/models/iic/cv_resnet50_face-detection_retinaface
+   Upstream revision: a3f0e4db2f39fdc1486fca660282f9a18a9753f9
+   License declared by the upstream model card: MIT License.
+   RetinaFace implementation: https://github.com/biubug6/Pytorch_Retinaface
+   Original license text is retained in third_party/MIT-retinaface.txt.
+   Export modification: ONNX format, dynamic spatial inputs, and an input
+   normalization wrapper multiplying BGR [0,1] by 255 and subtracting
+   [104,117,123]. Weights remain attributable to the upstream model.
+
+SHA-256 checksums, byte sizes and original revisions are in models.json.
+Python dependencies retain their respective upstream licenses. Installation
+uses their official Python package distributions, not vendored source copies.
+
+Examples are user-provided event photos published as workflow demonstrations.
+They are not covered by the software license. No permission to reuse faces,
+likenesses, logos, event materials or photographs is granted by this repository.

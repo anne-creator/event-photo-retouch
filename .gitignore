@@ -1,0 +1,13 @@
+.venv/
+.runtime/
+__pycache__/
+*.pyc
+*.onnx
+*.pt
+*.pth
+*.field.npz
+.codex/
+.env
+private/
+test-output/
+.DS_Store
