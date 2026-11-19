@@ -11,7 +11,7 @@ Updated 2026-11-19. Public release: v0.2.0.
 - `scripts/download_models.py`, `models.json`: checksum-pinned release asset installation.
 - `install.sh`, `run.sh`, `requirements.txt`: portable runtime installation and command entry point.
 - `references/workflow.md`: commands, scene configuration, failure handling and resource use.
-- `examples/`: metadata-stripped before/after web previews and public check summaries.
+- `examples/`: selected full-width original/AI-edit display pair, provenance in `selected-pair.json`, and earlier source-pixel previews/checks in `manifest.json`.
 - `tests/test_pipeline.py`: synthetic preservation and error-handling tests.
 - `LICENSE`, `NOTICE`, `third_party/`: code license and model attribution.
 
@@ -28,7 +28,7 @@ Install once, inspect original light, generate or reuse an illumination referenc
 
 ## Data Stats Change
 
-Two public demonstration pairs, seven eligible finished faces. Three separately downloaded model assets total 265,230,905 bytes. Model weights, personal paths, project memories and private validation images are excluded from Git.
+The README displays one user-selected pair vertically, original above and edited below, at full content width. Native images are 3840 x 2160 and 1672 x 941 pixels. The selected after image is a direct AI edit. Two earlier source-pixel demonstration pairs and their seven-face checks remain versioned separately. Three model assets total 265,230,905 bytes. Model weights, personal paths, project memories and private validation images are excluded from Git.
 
 ## Feature Specs
 
@@ -42,3 +42,5 @@ Two public demonstration pairs, seven eligible finished faces. Three separately 
 ## Maintenance Log
 
 - 2026-11-19: Packaged the established photo workflow for public installation; improved lighting controls using glare and projected-stripe failure cases. Eight automated checks and clean-install/real-photo inference checks passed on macOS Python 3.11.
+
+- 2026-11-19: Replaced the README comparison layout with the exact user-selected original and AI-edit pair, displayed separately at full content width. Retained native pixels, documented provenance and preserved earlier processing checks.

@@ -1,0 +1,36 @@
+{
+  "kind": "user-selected original and direct AI-edit display pair",
+  "presentation": {
+    "layout": "vertical",
+    "width": "100% of README content",
+    "order": [
+      "before",
+      "after"
+    ]
+  },
+  "before": {
+    "file": "examples/selected-before.png",
+    "size": [
+      3840,
+      2160
+    ],
+    "sha256": "0c412949c47b594da89f4f04f58434fcbf38002a62b0a874e810745d8f36bc6f",
+    "native_pixels_unchanged": true,
+    "metadata_fields": [
+      "icc_profile"
+    ],
+    "origin": "Original event photograph corresponding to the supplied screenshot, without the screenshot header."
+  },
+  "after": {
+    "file": "examples/selected-after.png",
+    "size": [
+      1672,
+      941
+    ],
+    "sha256": "9ae77fbcda6d30760d4454782e6e43f1b27517614f347445fa910a29087ba7da",
+    "native_pixels_unchanged": true,
+    "metadata_fields": [],
+    "origin": "The exact AI-edited image selected by the user for this demonstration."
+  },
+  "note": "Native files copied byte-for-byte. The selected AI edit is a different workflow artifact from the source-pixel renders documented in manifest.json. Photos are excluded from the software license."
+}

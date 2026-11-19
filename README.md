@@ -6,19 +6,17 @@ The image model supplies a lighting reference. A local renderer transfers smooth
 
 ## Before and after
 
-### Ceiling glare and halos
+The original event photo and the selected lighting edit, shown at full README content width.
 
-![Original and corrected ceiling glare, before on the left and after on the right](examples/ceiling-comparison.jpg)
+### Before
 
-The surrounding white haze is reduced while the lamps remain luminous. Faces and room details come from the original photograph. Four eligible faces receive the default natural finish.
+<img src="examples/selected-before.png" alt="Before: original event photo with bright ceiling glare" width="100%">
 
-### Mixed indoor light and a close group selfie
+### After
 
-![Original and corrected group selfie, before on the left and after on the right](examples/selfie-comparison.jpg)
+<img src="examples/selected-after.png" alt="After: selected AI lighting edit with reduced ceiling glare" width="100%">
 
-Warm color cast and exposure are balanced before the three foreground faces receive a light skin finish. Original sign lettering and facial features are retained.
-
-These are same-scale web previews of real processing results, not image-model outputs. Processing used the original 3840 × 2160 and 1707 × 1280 files. The preview copies have no EXIF/GPS metadata. PNG preservation checks were performed before JPEG preview compression. See [example checks](examples/manifest.json). Photographs are excluded from the software license.
+This selected result is a direct AI image edit. The original is 3840 x 2160 pixels; the edited image is 1672 x 941 pixels. Both files retain their native dimensions. [Image details](examples/selected-pair.json) record the selected files; [earlier processing checks](examples/manifest.json) document the source-pixel workflow. Photographs are excluded from the software license.
 
 ## Install
 
